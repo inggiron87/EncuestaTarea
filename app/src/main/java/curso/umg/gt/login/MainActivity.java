@@ -34,8 +34,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
 
         }else {
-            notificacion = Toast.makeText(this,"Error al ingresar",Toast.LENGTH_SHORT);
+            //notificacion = Toast.makeText(this,"Error al ingresar",Toast.LENGTH_SHORT);
+            //notificacion.show();
+            notificacion = Toast.makeText(this,"No pudo acceder, por favor llene la encuesta",Toast.LENGTH_LONG);
             notificacion.show();
+
+            Intent i = new Intent(this,EncuestaActivity.class);
+            startActivity(i);
+
 
         }
     }
